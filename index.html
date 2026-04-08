@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IIMBx — Digital Learning Foundation | Wireframe Revamp</title>
-  <meta name="description" content="IIMBx, the digital learning initiative of IIM Bangalore, offering world-class online programmes and executive education to professionals globally." />
+  <meta name="description"
+    content="IIMBx, the digital learning initiative of IIM Bangalore, offering world-class online programmes and executive education to professionals globally." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <div class="loader-logo">iimb<span class="logo-x"><svg class="dotted-x pop" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="8" class="dot d-center"></circle>
+            <circle cx="32" cy="32" r="7" class="dot d-tl-1"></circle>
+            <circle cx="18" cy="18" r="6" class="dot d-tl-2"></circle>
+            <circle cx="5" cy="5" r="5" class="dot d-tl-3"></circle>
+            <circle cx="68" cy="32" r="7" class="dot d-tr-1"></circle>
+            <circle cx="82" cy="18" r="6" class="dot d-tr-2"></circle>
+            <circle cx="95" cy="5" r="5" class="dot d-tr-3"></circle>
+            <circle cx="32" cy="68" r="7" class="dot d-bl-1"></circle>
+            <circle cx="18" cy="82" r="6" class="dot d-bl-2"></circle>
+            <circle cx="5" cy="95" r="5" class="dot d-bl-3"></circle>
+            <circle cx="68" cy="68" r="7" class="dot d-br-1"></circle>
+            <circle cx="82" cy="82" r="6" class="dot d-br-2"></circle>
+            <circle cx="95" cy="95" r="5" class="dot d-br-3"></circle>
+          </svg></span></div>
+      <p class="loader-tagline">Digital Learning Foundation</p>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+  <div class="swift-transition" id="swiftTransition"></div>
 
   <!-- ============================================================ -->
   <!-- NAVIGATION -->
@@ -19,7 +46,21 @@
     <div class="nav-container">
       <div class="nav-brand">
         <div class="brand-logo">
-          <span class="logo-iimb">IIMB</span><span class="logo-x">x</span>
+          <span class="logo-iimb">iimb</span><span class="logo-x"><svg class="dotted-x pop" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="8" class="dot d-center"></circle>
+              <circle cx="32" cy="32" r="7" class="dot d-tl-1"></circle>
+              <circle cx="18" cy="18" r="6" class="dot d-tl-2"></circle>
+              <circle cx="5" cy="5" r="5" class="dot d-tl-3"></circle>
+              <circle cx="68" cy="32" r="7" class="dot d-tr-1"></circle>
+              <circle cx="82" cy="18" r="6" class="dot d-tr-2"></circle>
+              <circle cx="95" cy="5" r="5" class="dot d-tr-3"></circle>
+              <circle cx="32" cy="68" r="7" class="dot d-bl-1"></circle>
+              <circle cx="18" cy="82" r="6" class="dot d-bl-2"></circle>
+              <circle cx="5" cy="95" r="5" class="dot d-bl-3"></circle>
+              <circle cx="68" cy="68" r="7" class="dot d-br-1"></circle>
+              <circle cx="82" cy="82" r="6" class="dot d-br-2"></circle>
+              <circle cx="95" cy="95" r="5" class="dot d-br-3"></circle>
+            </svg></span>
         </div>
         <span class="brand-tagline">Digital Learning Foundation</span>
       </div>
@@ -29,34 +70,37 @@
         <li class="has-dropdown">
           <a href="#about" class="nav-link">About Us <span class="arrow">›</span></a>
           <ul class="dropdown">
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Team</a></li>
+            <li><a href="https://iimbx.iimb.ac.in/about/">Our Story</a></li>
+            <li><a href="https://iimbx.iimb.ac.in/about/#team">Team</a></li>
           </ul>
         </li>
         <li class="has-dropdown">
           <a href="#programmes" class="nav-link">Programmes <span class="arrow">›</span></a>
           <ul class="dropdown">
-            <li><a href="#">Hospital Management</a></li>
-            <li><a href="#">AI for Managers</a></li>
-            <li><a href="#">Airlines Management</a></li>
-            <li><a href="#">Faculty Development</a></li>
-            <li><a href="#">FinTech Certificate</a></li>
+            <li><a href="https://iimbx.iimb.ac.in/hospital-management-program/">Hospital Management</a></li>
+            <li><a href="https://iimbx.iimb.ac.in/ai-for-managers/">AI for Managers</a></li>
+            <li><a href="https://iimbx.iimb.ac.in/airlines-management-programme/">Airlines Management</a></li>
+            <li><a href="https://iimbx.iimb.ac.in/faculty-development-program/">Faculty Development</a></li>
+            <li><a href="https://iimbx.iimb.ac.in/fintech/">FinTech Certificate</a></li>
           </ul>
         </li>
-        <li><a href="#" class="nav-link">Catalog</a></li>
+        <li><a href="https://iimbx.iimb.ac.in/catalog/" class="nav-link">Catalog</a></li>
         <li class="has-dropdown">
           <a href="#whats-new" class="nav-link">What's New <span class="arrow">›</span></a>
           <ul class="dropdown">
-            <li><a href="#">Newsletter</a></li>
-            <li><a href="#">Blogs</a></li>
+            <li><a href="https://iimbx.iimb.ac.in/newsletter/">Newsletter</a></li>
+            <li><a href="https://iimbx.iimb.ac.in/blog/">Blogs</a></li>
           </ul>
         </li>
-        <li><a href="#" class="nav-link">Contact</a></li>
+        <li><a href="https://iimbx.iimb.ac.in/contact/" class="nav-link">Contact</a></li>
       </ul>
 
       <div class="nav-actions">
         <button class="btn-search" id="searchBtn" aria-label="Search">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
         </button>
         <a href="https://www.iimbx.edu.in/login" class="btn-signin">Sign In</a>
         <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -122,16 +166,21 @@
         <span class="title-line" data-delay="200">Anywhere.</span>
       </h1>
       <p class="hero-subtitle">
-        Breaking barriers since 2014 — IIMBx delivers IIM Bangalore's prestigious management programmes to learners across 190+ countries through cutting-edge digital platforms.
+        Breaking barriers since 2014 — IIMBx delivers IIM Bangalore's prestigious management programmes to learners
+        across 190+ countries through cutting-edge digital platforms.
       </p>
       <div class="hero-ctas">
         <a href="#programmes" class="btn-primary" id="exploreBtn">
           Explore Programmes
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
         </a>
         <button class="btn-video" id="watchVideoBtn">
           <span class="play-circle">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
           </span>
           Watch Our Story
         </button>
@@ -145,60 +194,137 @@
 
     <div class="hero-visual">
       <div class="hero-card-stack">
-        <div class="floating-card card-1">
+        <a href="https://iimbx.iimb.ac.in/ai-for-managers/" class="floating-card card-1">
           <div class="fc-icon">🎓</div>
           <div class="fc-text">
             <strong>AI for Managers</strong>
             <span>New Batch Open</span>
           </div>
           <div class="fc-badge live">Live</div>
-        </div>
-        <div class="floating-card card-2">
+        </a>
+        <a href="https://iimbx.iimb.ac.in/hospital-management-program/" class="floating-card card-2">
           <div class="fc-icon">🏥</div>
           <div class="fc-text">
             <strong>Hospital Management</strong>
             <span>4th Batch Ongoing</span>
           </div>
           <div class="fc-badge ongoing">Ongoing</div>
-        </div>
-        <div class="floating-card card-3">
+        </a>
+        <a href="https://iimbx.iimb.ac.in/airlines-management-programme/" class="floating-card card-3">
           <div class="fc-icon">✈️</div>
           <div class="fc-text">
             <strong>Airlines Management</strong>
             <span>Enrolling Now</span>
           </div>
           <div class="fc-badge enroll">Enroll</div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- ============================================================ -->
-  <!-- TRUST BAR — Platform Partners -->
+  <!-- FEATURE BADGES SECTION -->
   <!-- ============================================================ -->
-  <section class="trust-bar" id="platforms">
+  <section class="feature-badges-section" id="feature-badges">
     <div class="container">
-      <p class="trust-label">Delivered through world-class platforms</p>
-      <div class="trust-logos">
-        <div class="trust-logo">
-          <div class="tl-box">edX</div>
-          <span>Since 2014</span>
+      <div class="feature-badges-layout">
+
+        <!-- LEFT: IIMB Anchor Card -->
+        <div class="fb-iimb-card reveal">
+          <div class="fb-iimb-logo-wrap">
+            <div class="official-logo-bg">
+              <img src="https://mma.prnewswire.com/media/1594951/IIM_Bangalore_Logo.jpg?p=publish"
+                alt="IIM Bangalore Official Logo" class="fb-iimb-official">
+            </div>
+          </div>
+          <div class="fb-iimb-divider"></div>
+          <div class="fb-iimb-body">
+            <strong class="fb-iimb-headline">IIM Bangalore Backed</strong>
+            <p class="fb-iimb-desc">Programmes designed and delivered by world-renowned faculty of India's top business
+              school</p>
+          </div>
         </div>
-        <div class="trust-divider"></div>
-        <div class="trust-logo">
-          <div class="tl-box swayam">SWAYAM</div>
-          <span>MHRD Initiative</span>
+
+        <!-- RIGHT: Triangle of 3 badges -->
+        <div class="fb-trio">
+          <div class="feature-badge-card reveal">
+            <div class="fb-icon">🌐</div>
+            <div class="fb-text">
+              <strong class="fb-title">India's First</strong>
+              <span class="fb-sub">Institution on the edX platform</span>
+            </div>
+          </div>
+          <div class="feature-badge-card reveal">
+            <div class="fb-icon">🌍</div>
+            <div class="fb-text">
+              <strong class="fb-title">190+ Countries</strong>
+              <span class="fb-sub">Truly global learning community</span>
+            </div>
+          </div>
+          <div class="feature-badge-card reveal fb-trio-bottom">
+            <div class="fb-icon">🎓</div>
+            <div class="fb-text">
+              <strong class="fb-title">IIM Certified</strong>
+              <span class="fb-sub">Official certificates from IIM Bangalore</span>
+            </div>
+          </div>
         </div>
-        <div class="trust-divider"></div>
-        <div class="trust-logo">
-          <div class="tl-box igot">iGOT</div>
-          <span>Karmayogi</span>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- PLATFORMS BENTO SECTION -->
+  <!-- ============================================================ -->
+  <section class="platforms-section" id="platforms">
+    <div class="container">
+      <div class="platforms-header reveal">
+        <h2 class="platforms-heading">One institution. <span class="text-accent">Four platforms.</span></h2>
+      </div>
+      <div class="platforms-bento">
+
+        <!-- FEATURED: IIMBx Own Platform -->
+        <div class="pb-card pb-featured reveal">
+          <div class="pb-label">IIMBx Platform</div>
+          <h3 class="pb-title">Custom learning solutions, built for your organisation</h3>
+          <p class="pb-desc">B2B learning solutions, custom LMS, certificate programmes, and faculty development — all
+            under one roof, powered by IIM Bangalore expertise.</p>
+          <div class="pb-stat-row">
+            <span class="pb-num">1.2M</span>
+            <span class="pb-unit">learners on IIMBx platform</span>
+          </div>
         </div>
-        <div class="trust-divider"></div>
-        <div class="trust-logo">
-          <div class="tl-box iimb">IIMBx</div>
-          <span>Own Platform</span>
+
+        <!-- SWAYAM -->
+        <div class="pb-card pb-swayam reveal">
+          <div class="pb-label">SWAYAM</div>
+          <h3 class="pb-title">40+ Management Courses</h3>
+          <p class="pb-desc">National Coordinator for management on India's premier MOOC platform.</p>
         </div>
+
+        <!-- edX -->
+        <div class="pb-card pb-edx reveal">
+          <div class="pb-label">edX Partnership</div>
+          <h3 class="pb-title">India's First on edX</h3>
+          <p class="pb-desc">IIMB was the first Indian management school on Harvard & MIT's edX platform.</p>
+        </div>
+
+        <!-- iGOT Karmayogi -->
+        <div class="pb-card pb-igot reveal">
+          <div class="pb-label">iGOT Karmayogi</div>
+          <h3 class="pb-title">Civil Service Capacity Building</h3>
+          <p class="pb-desc">Digital-first continuous learning ecosystem for India's civil servants, ensuring
+            future-readiness at all levels of governance.</p>
+        </div>
+
+        <!-- CTA -->
+        <div class="pb-card pb-cta reveal">
+          <div class="pb-label">Partnerships</div>
+          <h3 class="pb-title">Interested in working with IIMBx?</h3>
+          <a href="https://iimbx.iimb.ac.in/contact/" class="pb-cta-link">Get in touch →</a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -209,28 +335,28 @@
   <section class="stats-section" id="stats">
     <div class="container">
       <div class="stats-grid">
-        <div class="stat-item" data-count="1000000" data-suffix="+" data-prefix="">
-          <div class="stat-number"><span class="counter">1M</span><span class="stat-plus">+</span></div>
-          <div class="stat-label">Global Learners</div>
-          <div class="stat-sub">across 190+ countries</div>
+        <div class="stat-item reveal" data-count="4" data-suffix="" data-prefix="">
+          <div class="stat-number"><span class="counter">4</span><span class="stat-plus"></span></div>
+          <div class="stat-label">Global Platforms</div>
+          <div class="stat-sub">edX, Swayam, iGOT & more</div>
         </div>
         <div class="stat-divider"></div>
-        <div class="stat-item" data-count="50" data-suffix="+" data-prefix="">
-          <div class="stat-number"><span class="counter">50</span><span class="stat-plus">+</span></div>
-          <div class="stat-label">Online Courses</div>
-          <div class="stat-sub">& executive programmes</div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item" data-count="10" data-suffix="+" data-prefix="">
+        <div class="stat-item reveal" data-count="10" data-suffix="+" data-prefix="">
           <div class="stat-number"><span class="counter">10</span><span class="stat-plus">+</span></div>
           <div class="stat-label">Years of Excellence</div>
           <div class="stat-sub">pioneering digital learning</div>
         </div>
         <div class="stat-divider"></div>
-        <div class="stat-item" data-count="4" data-suffix="" data-prefix="">
-          <div class="stat-number"><span class="counter">4</span><span class="stat-plus"></span></div>
-          <div class="stat-label">Global Platforms</div>
-          <div class="stat-sub">edX, Swayam, iGOT & more</div>
+        <div class="stat-item reveal" data-count="50" data-suffix="+" data-prefix="">
+          <div class="stat-number"><span class="counter">50</span><span class="stat-plus">+</span></div>
+          <div class="stat-label">Online Courses</div>
+          <div class="stat-sub">& executive programmes</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item reveal" data-count="1000000" data-suffix="+" data-prefix="">
+          <div class="stat-number"><span class="counter">1M</span><span class="stat-plus">+</span></div>
+          <div class="stat-label">Global Learners</div>
+          <div class="stat-sub">across 190+ countries</div>
         </div>
       </div>
     </div>
@@ -246,10 +372,13 @@
           <div class="section-tag">Who We Are</div>
           <h2 class="section-title">Democratizing World-Class <span class="text-accent">Management Education</span></h2>
           <p class="section-body">
-            IIMBx, the digital learning initiative of the Indian Institute of Management Bangalore, was established to provide world-class education to learners everywhere — regardless of financial, academic, or social circumstances.
+            IIMBx, the digital learning initiative of the Indian Institute of Management Bangalore, was established to
+            provide world-class education to learners everywhere — regardless of financial, academic, or social
+            circumstances.
           </p>
           <p class="section-body">
-            Since our inception in 2014, we've pioneered the delivery of Massive Open Online Courses (MOOCs) through a landmark collaboration with edX, a leading non-profit learning platform founded by Harvard and MIT.
+            Since our inception in 2014, we've pioneered the delivery of Massive Open Online Courses (MOOCs) through a
+            landmark collaboration with edX, a leading non-profit learning platform founded by Harvard and MIT.
           </p>
           <div class="about-highlights">
             <div class="highlight-item">
@@ -275,7 +404,9 @@
             <div class="video-thumbnail">
               <div class="video-overlay">
                 <button class="video-play-btn" aria-label="Play video">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
                 </button>
                 <div class="video-label">Watch: IIMBx Story</div>
               </div>
@@ -302,22 +433,23 @@
   <section class="programmes-section" id="programmes">
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-tag">Our Programmes</div>
-        <h2 class="section-title">Learn from <span class="text-accent">IIM Bangalore</span> Faculty</h2>
-        <p class="section-desc">Certificate programmes designed for working professionals, co-created with industry leaders.</p>
+        <div class="section-tag">OUR PROGRAMMES</div>
+        <h2 class="section-title">Learning journeys for <span class="text-accent">every ambition.</span></h2>
+        <p class="section-desc">Discover the right path to accelerate your career with IIM Bangalore.</p>
       </div>
 
       <div class="prog-filter reveal">
-        <button class="filter-btn active" data-filter="all">All Programmes</button>
-        <button class="filter-btn" data-filter="management">Management</button>
-        <button class="filter-btn" data-filter="technology">Technology</button>
-        <button class="filter-btn" data-filter="finance">Finance</button>
-        <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="certificate">Certificate</button>
+        <button class="filter-btn" data-filter="degree">Degree</button>
       </div>
 
       <div class="programmes-grid" id="programmesGrid">
 
-        <div class="prog-card reveal" data-category="healthcare">
+        <div class="prog-card reveal" data-category="certificate">
+          <div class="official-card-seal">
+            <img src="https://mma.prnewswire.com/media/1594951/IIM_Bangalore_Logo.jpg?p=publish" alt="IIMB Seal">
+          </div>
           <div class="prog-card-top">
             <div class="prog-icon-wrap healthcare">
               <span>🏥</span>
@@ -330,25 +462,39 @@
           <div class="prog-card-body">
             <div class="prog-category">Healthcare Management</div>
             <h3 class="prog-title">Professional Certificate in Hospital Management</h3>
-            <p class="prog-desc">Equipping healthcare professionals with leadership and management skills for public healthcare impact.</p>
+            <p class="prog-desc">Equipping healthcare professionals with leadership and management skills for public
+              healthcare impact.</p>
             <div class="prog-meta">
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
                 12 Months
               </span>
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
                 Online + Campus
               </span>
             </div>
           </div>
           <a href="https://iimbx.iimb.ac.in/hospital-management-program/" class="prog-card-link">
             Explore Programme
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </a>
         </div>
 
-        <div class="prog-card reveal featured" data-category="technology">
+        <div class="prog-card reveal featured" data-category="certificate">
+          <div class="official-card-seal">
+            <img src="https://mma.prnewswire.com/media/1594951/IIM_Bangalore_Logo.jpg?p=publish" alt="IIMB Seal">
+          </div>
           <div class="featured-ribbon">Featured</div>
           <div class="prog-card-top">
             <div class="prog-icon-wrap technology">
@@ -362,25 +508,39 @@
           <div class="prog-card-body">
             <div class="prog-category">Artificial Intelligence</div>
             <h3 class="prog-title">Professional Certificate in AI for Managers</h3>
-            <p class="prog-desc">Bridging AI concepts with real-world management applications for future-ready business professionals.</p>
+            <p class="prog-desc">Bridging AI concepts with real-world management applications for future-ready business
+              professionals.</p>
             <div class="prog-meta">
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
                 16 Months
               </span>
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
                 125+ Alumni
               </span>
             </div>
           </div>
           <a href="https://iimbx.iimb.ac.in/ai-for-managers/" class="prog-card-link">
             Explore Programme
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </a>
         </div>
 
-        <div class="prog-card reveal" data-category="management">
+        <div class="prog-card reveal" data-category="certificate">
+          <div class="official-card-seal">
+            <img src="https://mma.prnewswire.com/media/1594951/IIM_Bangalore_Logo.jpg?p=publish" alt="IIMB Seal">
+          </div>
           <div class="prog-card-top">
             <div class="prog-icon-wrap management">
               <span>✈️</span>
@@ -393,25 +553,39 @@
           <div class="prog-card-body">
             <div class="prog-category">Aviation & Transport</div>
             <h3 class="prog-title">Airlines Management Programme</h3>
-            <p class="prog-desc">Specialized management programme for professionals in the aviation and airline industry.</p>
+            <p class="prog-desc">Specialized management programme for professionals in the aviation and airline
+              industry.</p>
             <div class="prog-meta">
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
                 9 Months
               </span>
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
                 Online
               </span>
             </div>
           </div>
           <a href="https://iimbx.iimb.ac.in/airlines-management-programme/" class="prog-card-link">
             Explore Programme
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </a>
         </div>
 
-        <div class="prog-card reveal" data-category="management">
+        <div class="prog-card reveal" data-category="certificate">
+          <div class="official-card-seal">
+            <img src="https://mma.prnewswire.com/media/1594951/IIM_Bangalore_Logo.jpg?p=publish" alt="IIMB Seal">
+          </div>
           <div class="prog-card-top">
             <div class="prog-icon-wrap faculty">
               <span>📚</span>
@@ -424,25 +598,39 @@
           <div class="prog-card-body">
             <div class="prog-category">Faculty Development</div>
             <h3 class="prog-title">Faculty Development Programme</h3>
-            <p class="prog-desc">Empowering educators with skills to design and deliver world-class MOOCs on digital platforms.</p>
+            <p class="prog-desc">Empowering educators with skills to design and deliver world-class MOOCs on digital
+              platforms.</p>
             <div class="prog-meta">
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
                 45 Days
               </span>
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
                 For Educators
               </span>
             </div>
           </div>
           <a href="https://iimbx.iimb.ac.in/faculty-development-program/" class="prog-card-link">
             Explore Programme
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </a>
         </div>
 
-        <div class="prog-card reveal" data-category="finance">
+        <div class="prog-card reveal" data-category="certificate">
+          <div class="official-card-seal">
+            <img src="https://mma.prnewswire.com/media/1594951/IIM_Bangalore_Logo.jpg?p=publish" alt="IIMB Seal">
+          </div>
           <div class="prog-card-top">
             <div class="prog-icon-wrap finance">
               <span>💳</span>
@@ -455,25 +643,39 @@
           <div class="prog-card-body">
             <div class="prog-category">Finance & Technology</div>
             <h3 class="prog-title">FinTech Certificate for Young Professionals</h3>
-            <p class="prog-desc">Comprehensive FinTech programme for young professionals entering the financial technology sector.</p>
+            <p class="prog-desc">Comprehensive FinTech programme for young professionals entering the financial
+              technology sector.</p>
             <div class="prog-meta">
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
                 6 Months
               </span>
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
                 Online
               </span>
             </div>
           </div>
           <a href="https://iimbx.iimb.ac.in/fintech/" class="prog-card-link">
             Explore Programme
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </a>
         </div>
 
-        <div class="prog-card reveal" data-category="management">
+        <div class="prog-card reveal" data-category="degree">
+          <div class="official-card-seal">
+            <img src="https://mma.prnewswire.com/media/1594951/IIM_Bangalore_Logo.jpg?p=publish" alt="IIMB Seal">
+          </div>
           <div class="prog-card-top">
             <div class="prog-icon-wrap bba">
               <span>🎓</span>
@@ -486,21 +688,32 @@
           <div class="prog-card-body">
             <div class="prog-category">Undergraduate Degree</div>
             <h3 class="prog-title">BBA in Digital Business & Entrepreneurship</h3>
-            <p class="prog-desc">A revolutionary BBA programme blending digital technology, business management, and entrepreneurship.</p>
+            <p class="prog-desc">A revolutionary BBA programme blending digital technology, business management, and
+              entrepreneurship.</p>
             <div class="prog-meta">
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
                 3 Years
               </span>
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
                 Online + Campus
               </span>
             </div>
           </div>
           <a href="https://dbe.iimb.ac.in/" class="prog-card-link">
             Explore Programme
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </a>
         </div>
 
@@ -512,60 +725,7 @@
     </div>
   </section>
 
-  <!-- ============================================================ -->
-  <!-- IMPACT / PLATFORM SECTION -->
-  <!-- ============================================================ -->
-  <section class="impact-section" id="impact">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-tag">Our Reach</div>
-        <h2 class="section-title">Delivering Learning <span class="text-accent">at Scale</span></h2>
-        <p class="section-desc">Partnering with India's top digital learning platforms to reach every corner of the world.</p>
-      </div>
-
-      <div class="impact-grid">
-        <div class="impact-card reveal">
-          <div class="impact-card-header">
-            <div class="impact-logo-placeholder iimbx-logo">IIMBx</div>
-            <div class="impact-tag">Own Platform</div>
-          </div>
-          <h3>IIMBx Platform</h3>
-          <p>Customized learning solutions tailored to diverse corporate and professional training needs. Our proprietary LMS delivers personalized learning paths at scale.</p>
-          <a href="https://iimbx.iimb.ac.in/about/" class="impact-link">Read More →</a>
-        </div>
-
-        <div class="impact-card reveal">
-          <div class="impact-card-header">
-            <div class="impact-logo-placeholder swayam-logo">SWAYAM</div>
-            <div class="impact-tag">MHRD Initiative</div>
-          </div>
-          <h3>Swayam</h3>
-          <p>IIM Bangalore promotes Access, Equity, and Quality through SWAYAM's online courses, reaching students in the remotest parts of India with zero cost.</p>
-          <a href="https://iimbx.iimb.ac.in/swayam/" class="impact-link">Read More →</a>
-        </div>
-
-        <div class="impact-card reveal">
-          <div class="impact-card-header">
-            <div class="impact-logo-placeholder edx-logo">edX</div>
-            <div class="impact-tag">Harvard & MIT Platform</div>
-          </div>
-          <h3>edX Partnership</h3>
-          <p>As India's first institution on edX, IIM Bangalore offers world-class global learning opportunities to a community of over 38 million learners worldwide.</p>
-          <a href="https://www.edx.org/" class="impact-link">Read More →</a>
-        </div>
-
-        <div class="impact-card reveal">
-          <div class="impact-card-header">
-            <div class="impact-logo-placeholder igot-logo">iGOT</div>
-            <div class="impact-tag">Government Platform</div>
-          </div>
-          <h3>iGOT Karmayogi</h3>
-          <p>A digital platform for continuous learning, enhancing civil servants' skills and future readiness. IIMBx contributes premium content for India's civil service.</p>
-          <a href="https://igotkarmayogi.gov.in/" class="impact-link">Read More →</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Section removed: Transitioned to Platforms Bento Grid above for cleaner UX -->
 
   <!-- ============================================================ -->
   <!-- TESTIMONIALS SECTION -->
@@ -579,48 +739,54 @@
 
       <div class="testimonials-carousel" id="testimonialsCarousel">
         <div class="testimonial-track-wrapper">
-        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-track" id="testimonialTrack">
 
-          <div class="testimonial-card">
-            <div class="tcard-quote">"</div>
-            <p class="tcard-text">The AI for Managers programme changed how I think about technology in business. The faculty's real-world case studies were exceptional and directly applicable to my work at a Fortune 500 company.</p>
-            <div class="tcard-author">
-              <div class="tcard-avatar">RS</div>
-              <div class="tcard-info">
-                <strong>Rahul Sharma</strong>
-                <span>Senior Manager, Infosys | AI for Managers Batch 2</span>
+            <div class="testimonial-card">
+              <div class="tcard-quote">"</div>
+              <p class="tcard-text">The AI for Managers programme changed how I think about technology in business. The
+                faculty's real-world case studies were exceptional and directly applicable to my work at a Fortune 500
+                company.</p>
+              <div class="tcard-author">
+                <div class="tcard-avatar">RS</div>
+                <div class="tcard-info">
+                  <strong>Rahul Sharma</strong>
+                  <span>Senior Manager, Infosys | AI for Managers Batch 2</span>
+                </div>
+                <div class="tcard-stars">★★★★★</div>
               </div>
-              <div class="tcard-stars">★★★★★</div>
             </div>
-          </div>
 
-          <div class="testimonial-card">
-            <div class="tcard-quote">"</div>
-            <p class="tcard-text">The Hospital Management Programme gave our government doctors the leadership tools they needed. It was specifically designed for the Indian healthcare system — unlike anything else available online.</p>
-            <div class="tcard-author">
-              <div class="tcard-avatar">PK</div>
-              <div class="tcard-info">
-                <strong>Dr. Priya Krishnamurthy</strong>
-                <span>CMO, Karnataka Health Dept. | PCHM Batch 3</span>
+            <div class="testimonial-card">
+              <div class="tcard-quote">"</div>
+              <p class="tcard-text">The Hospital Management Programme gave our government doctors the leadership tools
+                they needed. It was specifically designed for the Indian healthcare system — unlike anything else
+                available online.</p>
+              <div class="tcard-author">
+                <div class="tcard-avatar">PK</div>
+                <div class="tcard-info">
+                  <strong>Dr. Priya Krishnamurthy</strong>
+                  <span>CMO, Karnataka Health Dept. | PCHM Batch 3</span>
+                </div>
+                <div class="tcard-stars">★★★★★</div>
               </div>
-              <div class="tcard-stars">★★★★★</div>
             </div>
-          </div>
 
-          <div class="testimonial-card">
-            <div class="tcard-quote">"</div>
-            <p class="tcard-text">Getting a certificate from IIM Bangalore without relocating was a dream. The FinTech programme's curriculum was cutting-edge and my interview performance improved dramatically after completing it.</p>
-            <div class="tcard-author">
-              <div class="tcard-avatar">AM</div>
-              <div class="tcard-info">
-                <strong>Arjun Mehta</strong>
-                <span>Associate, Goldman Sachs | FinTech Programme</span>
+            <div class="testimonial-card">
+              <div class="tcard-quote">"</div>
+              <p class="tcard-text">Getting a certificate from IIM Bangalore without relocating was a dream. The FinTech
+                programme's curriculum was cutting-edge and my interview performance improved dramatically after
+                completing it.</p>
+              <div class="tcard-author">
+                <div class="tcard-avatar">AM</div>
+                <div class="tcard-info">
+                  <strong>Arjun Mehta</strong>
+                  <span>Associate, Goldman Sachs | FinTech Programme</span>
+                </div>
+                <div class="tcard-stars">★★★★★</div>
               </div>
-              <div class="tcard-stars">★★★★★</div>
             </div>
-          </div>
 
-        </div>
+          </div>
         </div>
 
         <div class="carousel-controls">
@@ -658,46 +824,45 @@
           <div class="news-card-body">
             <div class="news-date">March 2025</div>
             <h3 class="news-title">Valedictory Ceremony of PCHM Programme for Karnataka Government Doctors</h3>
-            <p class="news-excerpt">IIMBx's PCHM programme empowers Karnataka doctors with leadership skills for public healthcare impact through online learning.</p>
+            <p class="news-excerpt">IIMBx's PCHM programme empowers Karnataka doctors with leadership skills for public
+              healthcare impact through online learning.</p>
             <a href="#" class="news-link">Read More →</a>
           </div>
         </div>
 
-        <div class="news-small-grid">
-          <div class="news-card small reveal">
-              <div class="news-img-placeholder small-img">
-              <img src="news_faculty.png" alt="Faculty Development Programme 2025" class="news-thumb-img" />
-              <div class="news-category-tag">What's New</div>
-            </div>
-            <div class="news-card-body">
-              <div class="news-date">February 2025</div>
-              <h3 class="news-title">Faculty Development Programme 2025: A Journey Towards Digital Excellence</h3>
-              <a href="#" class="news-link">Read More →</a>
-            </div>
+        <div class="news-card small reveal">
+          <div class="news-img-placeholder small-img">
+            <img src="news_faculty.png" alt="Faculty Development Programme 2025" class="news-thumb-img" />
+            <div class="news-category-tag">What's New</div>
           </div>
-
-          <div class="news-card small reveal">
-              <div class="news-img-placeholder small-img">
-              <img src="news_ai_campus.png" alt="AI for Managers Campus Session" class="news-thumb-img" />
-              <div class="news-category-tag">What's New</div>
-            </div>
-            <div class="news-card-body">
-              <div class="news-date">January 2025</div>
-              <h3 class="news-title">A Memorable First In-Campus Session for AI for Managers Batch-3 at IIMBx</h3>
-              <a href="#" class="news-link">Read More →</a>
-            </div>
+          <div class="news-card-body">
+            <div class="news-date">February 2025</div>
+            <h3 class="news-title">Faculty Development Programme 2025: A Journey Towards Digital Excellence</h3>
+            <a href="#" class="news-link">Read More →</a>
           </div>
+        </div>
 
-          <div class="news-card small reveal">
-              <div class="news-img-placeholder small-img">
-              <img src="news_ai_batch2.png" alt="AI for Managers Batch 2 Graduation" class="news-thumb-img" />
-              <div class="news-category-tag">What's New</div>
-            </div>
-            <div class="news-card-body">
-              <div class="news-date">December 2024</div>
-              <h3 class="news-title">They Did It! Batch 2 of AI for Managers Successfully Crosses the Finish Line</h3>
-              <a href="#" class="news-link">Read More →</a>
-            </div>
+        <div class="news-card small reveal">
+          <div class="news-img-placeholder small-img">
+            <img src="news_ai_campus.png" alt="AI for Managers Campus Session" class="news-thumb-img" />
+            <div class="news-category-tag">What's New</div>
+          </div>
+          <div class="news-card-body">
+            <div class="news-date">January 2025</div>
+            <h3 class="news-title">A Memorable First In-Campus Session for AI for Managers Batch-3 at IIMBx</h3>
+            <a href="#" class="news-link">Read More →</a>
+          </div>
+        </div>
+
+        <div class="news-card small reveal">
+          <div class="news-img-placeholder small-img">
+            <img src="news_ai_batch2.png" alt="AI for Managers Batch 2 Graduation" class="news-thumb-img" />
+            <div class="news-category-tag">What's New</div>
+          </div>
+          <div class="news-card-body">
+            <div class="news-date">December 2024</div>
+            <h3 class="news-title">They Did It! Batch 2 of AI for Managers Successfully Crosses the Finish Line</h3>
+            <a href="#" class="news-link">Read More →</a>
           </div>
         </div>
       </div>
@@ -715,9 +880,11 @@
       <div class="cta-content reveal">
         <div class="cta-badge">Start Your Journey</div>
         <h2 class="cta-title">Ready to Learn from<br />IIM Bangalore Faculty?</h2>
-        <p class="cta-desc">Join 1M+ learners worldwide who have transformed their careers through IIMBx's world-class digital programmes.</p>
+        <p class="cta-desc">Join 1M+ learners worldwide who have transformed their careers through IIMBx's world-class
+          digital programmes.</p>
         <div class="cta-actions">
-          <a href="https://iimbx.iimb.ac.in/programs/" class="btn-primary large" id="ctaExploreBtn">Browse All Programmes</a>
+          <a href="https://iimbx.iimb.ac.in/programs/" class="btn-primary large" id="ctaExploreBtn">Browse All
+            Programmes</a>
           <a href="https://iimbx.iimb.ac.in/contact/" class="btn-ghost" id="ctaContactBtn">Talk to an Advisor →</a>
         </div>
       </div>
@@ -734,10 +901,25 @@
 
           <div class="footer-brand-col">
             <div class="footer-logo">
-              <span class="logo-iimb">IIMB</span><span class="logo-x">x</span>
+              <span class="logo-iimb">iimb</span><span class="logo-x"><svg class="dotted-x pop" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="8" class="dot d-center"></circle>
+                  <circle cx="32" cy="32" r="7" class="dot d-tl-1"></circle>
+                  <circle cx="18" cy="18" r="6" class="dot d-tl-2"></circle>
+                  <circle cx="5" cy="5" r="5" class="dot d-tl-3"></circle>
+                  <circle cx="68" cy="32" r="7" class="dot d-tr-1"></circle>
+                  <circle cx="82" cy="18" r="6" class="dot d-tr-2"></circle>
+                  <circle cx="95" cy="5" r="5" class="dot d-tr-3"></circle>
+                  <circle cx="32" cy="68" r="7" class="dot d-bl-1"></circle>
+                  <circle cx="18" cy="82" r="6" class="dot d-bl-2"></circle>
+                  <circle cx="5" cy="95" r="5" class="dot d-bl-3"></circle>
+                  <circle cx="68" cy="68" r="7" class="dot d-br-1"></circle>
+                  <circle cx="82" cy="82" r="6" class="dot d-br-2"></circle>
+                  <circle cx="95" cy="95" r="5" class="dot d-br-3"></circle>
+                </svg></span>
             </div>
             <p class="footer-tagline">Digital Learning Foundation<br />IIM Bangalore</p>
-            <p class="footer-desc">Democratizing world-class management education since 2014. Reach us at Bangalore, Karnataka, India.</p>
+            <p class="footer-desc">Democratizing world-class management education since 2014. Reach us at Bangalore,
+              Karnataka, India.</p>
             <div class="footer-socials">
               <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
               <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
@@ -749,39 +931,39 @@
           <div class="footer-col">
             <h4 class="footer-heading">Programmes</h4>
             <ul class="footer-links">
-              <li><a href="#">Hospital Management</a></li>
-              <li><a href="#">AI for Managers</a></li>
-              <li><a href="#">Airlines Management</a></li>
-              <li><a href="#">Faculty Development</a></li>
-              <li><a href="#">FinTech Certificate</a></li>
-              <li><a href="#">BBA DBE</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/hospital-management-program/">Hospital Management</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/ai-for-managers/">AI for Managers</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/airlines-management-programme/">Airlines Management</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/faculty-development-program/">Faculty Development</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/fintech/">FinTech Certificate</a></li>
+              <li><a href="https://dbe.iimb.ac.in/">BBA DBE</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
             <h4 class="footer-heading">Organisation</h4>
             <ul class="footer-links">
-              <li><a href="#">About IIMBx</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Catalog</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Newsletter</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/about/">About IIMBx</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/about/#team">Our Team</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/catalog/">Catalog</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/blog/">Blogs</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/newsletter/">Newsletter</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/contact/">Contact Us</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
             <h4 class="footer-heading">Careers</h4>
             <ul class="footer-links">
-              <li><a href="#">Job Openings</a></li>
-              <li><a href="#">Internships</a></li>
-              <li><a href="#">Freelancing</a></li>
+              <li><a href="https://www.iimb.ac.in/careers">Job Openings</a></li>
+              <li><a href="https://www.iimb.ac.in/careers">Internships</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/contact/">Freelancing</a></li>
             </ul>
             <h4 class="footer-heading" style="margin-top: 1.5rem;">Platforms</h4>
             <ul class="footer-links">
-              <li><a href="#">edX</a></li>
-              <li><a href="#">Swayam</a></li>
-              <li><a href="#">iGOT Karmayogi</a></li>
+              <li><a href="https://www.edx.org/school/iimbx">edX</a></li>
+              <li><a href="https://swayam.gov.in/nc_details/IIMB">Swayam</a></li>
+              <li><a href="https://igotkarmayogi.gov.in/">iGOT Karmayogi</a></li>
             </ul>
           </div>
 
@@ -815,4 +997,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

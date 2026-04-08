@@ -6,6 +6,9 @@
 
 (function () {
   'use strict';
+  
+  // Lock scroll immediately for intro loader
+  document.body.style.overflow = 'hidden';
 
   // ── NAVBAR SCROLL EFFECT ─────────────────────────────────────
   const navbar = document.getElementById('navbar');
@@ -110,15 +113,15 @@
   const revealElements = document.querySelectorAll('.reveal');
 
   const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, i * 80);
-        revealObserver.unobserve(entry.target);
+        entry.target.classList.add('visible');
+      } else {
+        // Retriggering: remove class when out of view
+        entry.target.classList.remove('visible');
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
   revealElements.forEach(el => revealObserver.observe(el));
 
@@ -153,14 +156,28 @@
   }
 
   const statsObserver = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting && !statsCounted) {
-      statsCounted = true;
-      document.querySelectorAll('.stat-item').forEach(item => {
-        const count = parseInt(item.dataset.count);
-        const suffix = item.dataset.suffix || '';
-        const counterEl = item.querySelector('.counter');
-        if (counterEl && count) animateCounter(counterEl, count, suffix);
-      });
+    if (entries[0].isIntersecting) {
+      if (!statsCounted) {
+        statsCounted = true;
+        const items = document.querySelectorAll('.stat-item');
+        items.forEach((item, index) => {
+          const count = parseInt(item.dataset.count);
+          const suffix = item.dataset.suffix || '';
+          const counterEl = item.querySelector('.counter');
+          
+          const delay = 100 + (index * 400); 
+          
+          setTimeout(() => {
+            if (counterEl && count && statsCounted) {
+              animateCounter(counterEl, count, suffix);
+            }
+          }, delay);
+        });
+      }
+    } else {
+      // Retriggering: Reset when out of view
+      statsCounted = false;
+      document.querySelectorAll('.stat-item .counter').forEach(el => el.textContent = '0');
     }
   }, { threshold: 0.5 });
 
@@ -280,13 +297,64 @@
     if (e.key === 'Escape') closeModal();
   });
 
+  // ── PAGE LOADER ──────────────────────────────────────────────
+  window.addEventListener('load', () => {
+    const loader = document.getElementById('pageLoader');
+    if (loader) {
+      setTimeout(() => {
+        loader.classList.add('loaded');
+        document.body.style.overflow = ''; // Re-enable scroll
+      }, 2500); // 2.5s for brand intro
+    }
+  });
+
+  // ── SWIFT TRANSITION ─────────────────────────────────────────
+  function triggerSwiftTransition(callback) {
+    const swift = document.getElementById('swiftTransition');
+    if (!swift) {
+      if (callback) callback();
+      return;
+    }
+    
+    swift.classList.add('active');
+    
+    setTimeout(() => {
+      if (callback) callback();
+    }, 400);
+
+    setTimeout(() => {
+      swift.classList.remove('active');
+    }, 850);
+  }
+
   // ── SMOOTH SCROLL FOR ANCHOR LINKS ───────────────────────────
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
-      const target = document.querySelector(anchor.getAttribute('href'));
+      const targetId = anchor.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const target = document.querySelector(targetId);
       if (target) {
         e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+        triggerSwiftTransition(() => {
+          const offset = 80; // height of fixed navbar approx
+          const bodyRect = document.body.getBoundingClientRect().top;
+          const elementRect = target.getBoundingClientRect().top;
+          const elementPosition = elementRect - bodyRect;
+          const offsetPosition = elementPosition - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'auto'
+          });
+
+          // Update active state manually
+          document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+          if (anchor.classList.contains('nav-link')) {
+            anchor.classList.add('active');
+          }
+        });
       }
     });
   });
@@ -301,6 +369,32 @@
     });
   });
 
+  // ── LOGO RE-TRIGGER ANIMATION ────────────────────────────────
+  function retriggerAllLogos() {
+    document.querySelectorAll('.dotted-x').forEach(svg => {
+      svg.classList.remove('pop');
+      void svg.offsetWidth; // Force reflow
+      svg.classList.add('pop');
+    });
+  }
+
+  function retriggerSpecificLogo(e) {
+    const svg = e.currentTarget.querySelector('.dotted-x');
+    if (svg) {
+      svg.classList.remove('pop');
+      void svg.offsetWidth;
+      svg.classList.add('pop');
+    }
+  }
+
+  // Trigger every 60 seconds slowly and naturally
+  setInterval(retriggerAllLogos, 60000);
+
+  // Trigger on hover for instant feedback
+  document.querySelectorAll('.brand-logo, .footer-logo, .loader-logo').forEach(logo => {
+    logo.addEventListener('mouseenter', retriggerSpecificLogo);
+  });
+
   // ── PROG CARD TILT ───────────────────────────────────────────
   document.querySelectorAll('.prog-card, .impact-card').forEach(card => {
     card.addEventListener('mousemove', (e) => {
@@ -312,6 +406,30 @@
 
     card.addEventListener('mouseleave', () => {
       card.style.transform = '';
+    });
+  });
+
+  // ── MAGNETIC BUTTONS ─────────────────────────────────────────
+  const magneticElements = document.querySelectorAll('.btn-primary, .btn-signin, .btn-video, .video-play-btn');
+
+  magneticElements.forEach(el => {
+    el.addEventListener('mousemove', (e) => {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+
+      el.style.transform = `translate(${x * 0.35}px, ${y * 0.35}px)`;
+      
+      const sub = el.querySelector('svg, .play-circle');
+      if (sub) {
+        sub.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+      }
+    });
+
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = '';
+      const sub = el.querySelector('svg, .play-circle');
+      if (sub) sub.style.transform = '';
     });
   });
 
